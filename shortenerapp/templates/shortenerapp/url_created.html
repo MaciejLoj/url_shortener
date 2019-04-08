@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+        <div class="text-center">
+            <h3>Your short URL has been created!</h3>
+            <p>URL you wanted to shorten:</p>
+            <p><a href="{{object.url}}">{{object.url}}</a></p>
+            <p>Shortened URL:</p>
+            <p><a href="{{object.show_url}}">{{object.show_url}}</a></p>
+            <p><a href="/">Go back and create your new URL!</a></p>
+        </div>
+
+{% endblock %}
