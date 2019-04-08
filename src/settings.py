@@ -32,7 +32,7 @@ SECRET_KEY = config('SECRET_KEY')
 # DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['127.0.0.1', 'shorturlcreator.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'shorturlcreator.herokuapp.com', 'localhost']
 
 
 # Application definition
