@@ -16,4 +16,4 @@ class URLShortener(models.Model):
         return str(self.url)
 
     def show_url(self):
-        return "http://127.0.0.1:8000/{short_url}".format(short_url=self.short_url)
+        return "https://shorturlcreator.herokuapp.com/{short_url}".format(short_url=self.short_url)
